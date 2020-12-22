@@ -1,0 +1,69 @@
+.pa11, .pa12 {
+    height: 400px;
+    position: relative;
+    display: block;
+    z-index: 0;
+
+    & .card-body > div {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &::after {
+        content: "";
+        position:absolute;
+        display: block;
+        top:0;
+        height: 400px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+        background: url("./../img/pa11.jpg") top center;
+        background-size: cover;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            background: url("./../img/pa11.jpg") top center;
+            background-size: cover;
+        }
+    }
+}
+
+.pa11 {
+    &::after {
+        background: url("./../img/pa11.jpg") top center;
+        background-size: cover;
+    }
+
+    &:hover {
+        &::after {
+            background: url("./../img/pa11.jpg") top center;
+            background-size: cover;
+        }
+    }
+}
+
+.pa12 {
+    &::after {
+        background: url("./../img/pa12.jpg") top center;
+        background-size: cover;
+    }
+
+    &:hover {
+        &::after {
+            background: url("./../img/pa12.jpg") top center;
+            background-size: cover;
+        }
+    }
+}
+
+
+.galeria {
+    & img {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

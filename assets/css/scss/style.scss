@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+@import "./custom-bootstrap";
+@import "./estilos-generales";
+@import "./header";
+@import "./otros-estilos";
+
+
+
+
+.color-marca {
+	background: linear-gradient(-90deg, #33abe0, #5816a1);
+}
+
+.color-marca-hover {
+
+	&:hover {
+		background: linear-gradient(-90deg, #33abe0, #5816a1);
+		color: #fff;
+	}
+}
+
+.subrayado {
+	display: block;
+	position: relative;
+	line-height: 1.5em;
+
+	&::after {
+		content:"";
+		// position: absolute;
+		display: block;
+		height: 7px;
+		width: 20%;
+		background: linear-gradient(-90deg, #33abe0, #5816a1);
+	}
+}
+
+
+
+
+
+// .logotipo {
+// 	transition: 0.2s;
+// 	position     : absolute;
+// 	top          : 0px;
+// 	bottom       : 0px;
+// 	right        : 0px;
+// 	left         : 0px;
+// 	margin       : auto;
+// 	opacity: 1;
+// }
+
+

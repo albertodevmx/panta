@@ -1,0 +1,72 @@
+.logotipo-menu {
+	opacity: 1;
+	transition: 0.4s;
+	height: 35px;
+}
+
+.mi-nav-bar {
+	background: linear-gradient(-90deg, #c4a7dd, #b5e1f5);
+	transition: 0.4s;
+
+
+	& a {
+		color: #fff!important;
+
+		&:hover {
+			color:rgba(255,255,255,0.6)!important;
+		}
+	}
+}
+
+
+
+.aumentar-margen {
+	margin-top: 250px;
+}
+
+.portada-principal {
+	
+
+	&:after {
+		content: "";
+		display: block;
+		transition: 1s;
+		width: 100%;
+		position: absolute;
+		transition: 1s;
+		height: 100vh;
+		z-index: -3;
+		left: 0;
+		// background: url('./../img/panta-logo.png') center center no-repeat, linear-gradient(-90deg, #c4a7dd, #b5e1f5);
+		background: url('./../img/panta-logo.png') center center no-repeat, linear-gradient(-90deg, #c4a7dd, #b5e1f5);
+	}
+}
+
+
+.portada-scroll {
+	
+	&::after {
+		content: "";
+		display: block;
+		transition: 1s;
+		width: 100%;
+		position: absolute;
+		transition: 1s;
+		height: 0px;
+		z-index: -1;
+		left: 0;
+		background: linear-gradient(-90deg, #c4a7dd, #b5e1f5);
+	}
+}
+
+
+
+
+// .portada {
+// 	height    : 100vh;
+// }
+
+// .portada {
+// 	background: linear-gradient(-90deg, #c4a7dd, #b5e1f5);
+// 	transition: 0.4s;
+// }
