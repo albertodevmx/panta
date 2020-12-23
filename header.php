@@ -13,11 +13,14 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body <?php if ($_SERVER['REQUEST_URI'] == "/index.php") { echo 'class="bg-secondary"'; } ?>>
+<body <?php if ( $_SERVER['REQUEST_URI'] == "/index.php" | $_SERVER['REQUEST_URI'] == "/" | $_SERVER['REQUEST_URI'] == "" ) { echo 'class="bg-secondary"'; } ?>>
 
-	<nav id="portada" class="navbar navbar-expand-lg navbar-dark fixed-top shadow d-flex align-items-start mi-nav-bar bg-light<?php if ($_SERVER['REQUEST_URI'] == "/index.php") { echo ' portada-principal'; } ?>">
+
+	<nav id="portada" class="navbar navbar-expand-lg navbar-dark fixed-top shadow d-flex align-items-start mi-nav-bar bg-light<?php if ( $_SERVER['REQUEST_URI'] == "/index.php" | $_SERVER['REQUEST_URI'] == "/" | $_SERVER['REQUEST_URI'] == "" ) { echo ' portada-principal'; } ?>">
 		<a class="navbar-brand" href="#" class="d-block">
 			<img src="./assets/img/panta-logo.png" alt="" id="logotipo-menu" class="logotipo-menu">
+
+			
 		</a>
 
 		<!-- <img id="logotipo" src="./img/panta-logo.png" alt="" class="logotipo"> -->

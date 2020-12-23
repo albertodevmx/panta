@@ -51,10 +51,10 @@
 
 
 <?php 
-        $word = "index";
-        $mystring = $_SERVER['REQUEST_URI'];
+        // $word = "index";
+        // $mystring = $_SERVER['REQUEST_URI'];
          
-        if(strpos($mystring, $word) !== false){
+        if(  $_SERVER['REQUEST_URI'] == "/index.php" | $_SERVER['REQUEST_URI'] == "/" | $_SERVER['REQUEST_URI'] == "" ){
 ?>
 <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
